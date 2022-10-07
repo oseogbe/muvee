@@ -3,9 +3,9 @@
     <img src="../assets/img/movieHero.jpg" alt="movie hero image">
     <div class="text-container">
       <div class="text">
-        <span class="mini-heading">#1 Movie Streaming Platform</span>
+        <span class="mini-heading">#1 Movies Catalogue</span>
         <h1><span>Now</span> Streaming</h1>
-        <a href="#movie-grid" class="button">View Movies</a>
+        <a href="#movies-container" class="button">View Movies</a>
       </div>
     </div>
   </div>
@@ -21,9 +21,11 @@
 .hero {
   height: 400px;
   position: relative;
+
   @media (min-width: 750px) {
     height: 500px;
   }
+
   &::after {
     content: '';
     position: absolute;
@@ -33,11 +35,13 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
   }
+
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
+
   .text-container {
     z-index: 99;
     position: absolute;
@@ -48,30 +52,36 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     .text {
       padding: 0 16px;
       width: 100%;
       max-width: 1400px;
       margin: 0 auto;
     }
+
     .mini-heading {
       font-weight: 600;
       font-size: 18px;
       text-transform: uppercase;
       color: #c92502;
       margin-bottom: 8px;
+
       @media (min-width: 750px) {
         font-size: 22px;
       }
     }
+
     h1 {
       color: #fff;
       font-size: 64px;
       font-weight: 200;
       margin-bottom: 8px;
+
       @media (min-width: 750px) {
         font-size: 84px;
       }
+
       span {
         font-weight: 500;
       }
